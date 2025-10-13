@@ -1,5 +1,6 @@
 {
   "lazy.nvim": { "branch": "main", "commit": "6c3bda4aca61a13a9c63f1c1d1b16b9d3be90d7a" },
   "neomodern.nvim": { "branch": "main", "commit": "6fb1f29c092996fd3cef915a92b48992e0ba71d4" },
-  "oldworld.nvim": { "branch": "main", "commit": "d0af80cf6bd5d17789cd1214a8054fe1cf23fc22" }
+  "oldworld.nvim": { "branch": "main", "commit": "d0af80cf6bd5d17789cd1214a8054fe1cf23fc22" },
+  "which-key.nvim": { "branch": "main", "commit": "b4177e3eaf15fe5eb8357ebac2286d488be1ed00" }
 }
