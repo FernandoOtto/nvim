@@ -27,6 +27,7 @@ require("lazy").setup({
     -- import your plugins
     { import = "plugins/colorscheme" },
     { import = "plugins/utils" },
+    { import = "plugins/code" },
     { import = "plugins/ui" },
   },
   -- Configure any other settings here. See the documentation for more details.
