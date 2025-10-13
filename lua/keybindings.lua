@@ -15,6 +15,14 @@ wk.add({
 	{ "<leader>fb", "<cmd>Telescope buffers<cr>", desc = "Find Buffers" },
 	{ "<leader>fh", "<cmd>Telescope help_tags<cr>", desc = "Help Tags" },
 
+ 	{
+		"<leader>fm",
+		function()
+			require("conform").format()
+		end,
+		desc = "Format file",
+	},
+
 	{
 		"<leader>?",
 		function()
