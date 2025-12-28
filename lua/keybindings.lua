@@ -3,7 +3,7 @@ local wk = require("which-key")
 wk.add({
 	{
 		mode = { "n", "v" },
-		{ "<leader>-", "<cmd>Oil<cr>", desc = "Open Oil" },
+		{ "<leader>-", "<cmd>Fyler kind=float<cr>", desc = "Open Fyler" },
 		{ "<leader>q", "<cmd>q<cr>", desc = "Quit", hidden = true },
 		{ "<leader>w", "<cmd>w<cr>", desc = "Write", hidden = true },
 	},

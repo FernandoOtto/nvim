@@ -1,9 +1,9 @@
 local cmd = vim.cmd
 local opt = vim.opt
-local o   = vim.o
-local g   = vim.g
+local o = vim.o
+local g = vim.g
 
-cmd('colorscheme hojicha')
+cmd("colorscheme hojicha")
 opt.shortmess:append("sI")
 opt.cmdheight = 0
 
