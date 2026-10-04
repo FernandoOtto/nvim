@@ -1,13 +1,33 @@
 return {
+
 	"nvim-treesitter/nvim-treesitter",
-	branch = "master",
 	lazy = false,
 	build = ":TSUpdate",
 	config = function()
-		require("nvim-treesitter.configs").setup({
-			auto_install = true,
-			ignore_install = { "jsonc" },
-			highlight = { enable = true },
+		require("nvim-treesitter").setup({
+			-- Directory to install parsers and queries to (prepended to `runtimepath` to have priority)
+			install_dir = vim.fn.stdpath("data") .. "/site",
+		})
+
+    local languages = {
+			"c",
+			"cpp",
+			"lua",
+			"rust",
+			"python",
+			"zig",
+			"html",
+			"css",
+			"typescript",
+    }
+
+		require("nvim-treesitter").install(languages)
+
+		vim.api.nvim_create_autocmd("FileType", {
+			pattern = languages,
+			callback = function()
+				vim.treesitter.start()
+			end,
 		})
 	end,
 }
