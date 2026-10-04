@@ -18,7 +18,7 @@ return {
 
 		-- (Default) Only show the documentation popup when manually triggered
 		completion = {
-			list = { selection = { preselect = false, auto_insert = false } },
+			list = { selection = { preselect = false, auto_insert = true } },
 			keyword = {
 				range = "full",
 			},
