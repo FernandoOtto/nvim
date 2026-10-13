@@ -1,18 +1,18 @@
 local wk = require("which-key")
 
 wk.add({
-  -- Window navigation
-  {
-    mode = { "n", "t" },
-    { "<c-h>", "<c-w>h", silent = true },
-    { "<c-j>", "<c-w>j", silent = true },
-    { "<c-k>", "<c-w>k", silent = true },
-    { "<c-l>", "<c-w>l", silent = true },
-  },
+	-- Window navigation
+	{
+		mode = { "n", "t" },
+		{ "<c-h>", "<c-w>h", silent = true },
+		{ "<c-j>", "<c-w>j", silent = true },
+		{ "<c-k>", "<c-w>k", silent = true },
+		{ "<c-l>", "<c-w>l", silent = true },
+	},
 
 	{
 		mode = { "n", "v" },
-		{ "<leader>-", "<cmd>Fyler kind=split_left_most<cr>", desc = "Open Fyler" },
+		{ "<leader>-", "<cmd>Fyler kind=floating<cr>", desc = "Open Fyler" },
 		{ "<leader>q", "<cmd>q<cr>", desc = "Quit", hidden = true },
 		{ "<leader>w", "<cmd>w<cr>", desc = "Write", hidden = true },
 	},
@@ -51,12 +51,14 @@ wk.add({
 	{ "<leader>ls", vim.lsp.buf.signature_help, desc = "Show Signature" },
 
 	-- Terminal
-  { "<leader>t", group = "Terminal" },
+	{ "<leader>t", group = "Terminal" },
 	{ "<leader>to", "<cmd>terminal<cr>", desc = "Open Terminal" },
 
 	{ "<leader>c", group = "CODE" },
-	{ "<leader>cc", "<cmd>terminal make<cr>", desc = "Compile Code" },
+	{ "<leader>cb", "<cmd>terminal make build<cr>", desc = "Build Code" },
 	{ "<leader>cr", "<cmd>terminal make run<cr>", desc = "Run Code" },
+	{ "<leader>ct", "<cmd>terminal make test<cr>", desc = "Test Code" },
+	{ "<leader>cc", "<cmd>terminal make clean<cr>", desc = "Clear Code" },
 
 	{
 		"<leader>?",

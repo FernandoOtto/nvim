@@ -9,7 +9,7 @@ return {
 			install_dir = vim.fn.stdpath("data") .. "/site",
 		})
 
-    local languages = {
+		local languages = {
 			"c",
 			"cpp",
 			"lua",
@@ -19,7 +19,9 @@ return {
 			"html",
 			"css",
 			"typescript",
-    }
+			"make",
+			"java",
+		}
 
 		require("nvim-treesitter").install(languages)
 
